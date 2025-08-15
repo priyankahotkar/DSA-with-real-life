@@ -233,13 +233,11 @@ npm run build
 - Add complexity analysis
 - Test on multiple devices
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
 - **LeetCode** for problem descriptions and links
+- **GeeksForGeeks** for problem practice and links
 - **HackerRank** for additional practice problems
 - **Open source community** for algorithms and implementations
 - **Educators** who inspired the teaching approach
