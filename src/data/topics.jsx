@@ -162,6 +162,38 @@ export const topics = [
         </div>
       </div>
     `,
+    explanationSteps: [
+      {
+        title: "Understanding Arrays",
+        description: "Arrays are like a row of mailboxes - each has a unique number (index) and can store one item. Think of a parking lot with numbered spaces where each space can hold exactly one car.",
+        highlightText: "row of mailboxes",
+        tip: "Remember: Arrays start counting from 0, not 1!"
+      },
+      {
+        title: "Real-World Analogy",
+        description: "A parking lot is a perfect analogy for arrays. Each numbered space (index) can hold one car (element). You can park, check, or move cars using their space numbers.",
+        highlightText: "parking lot",
+        tip: "This analogy helps visualize how arrays work in memory"
+      },
+      {
+        title: "Key Characteristics",
+        description: "Arrays have fixed size, same data type for all elements, indexed access, and contiguous memory storage. Like a parking lot with set spaces for cars only.",
+        highlightText: "Fixed Size",
+        tip: "These characteristics make arrays fast but inflexible"
+      },
+      {
+        title: "Essential Concepts",
+        description: "Zero-based indexing means first element is at index 0. Bounds checking prevents accessing invalid indices. Memory efficiency comes from consecutive storage.",
+        highlightText: "Zero-based indexing",
+        tip: "This is a common source of off-by-one errors!"
+      },
+      {
+        title: "Common Operations",
+        description: "Access (reading), Update (writing), and Traversal (visiting all elements) are the three main operations you'll perform on arrays.",
+        highlightText: "Access",
+        tip: "Access and update are O(1) operations - very fast!"
+      }
+    ],
     codeExamples: [
       {
         title: 'Basic Array Operations',
@@ -180,11 +212,36 @@ for(int i = 0; i < numbers.length; i++) {
 }`,
         visualization: <ArrayVisual />,
         steps: [
-          "Create array with 5 elements in contiguous memory",
-          "Access first element using index 0 - direct memory access",
-          "Update element at index 2 - direct assignment",
-          "Loop through each index from 0 to length-1",
-          "Print each element with its position"
+          {
+            title: "Array Creation",
+            description: "Create array with 5 elements in contiguous memory locations",
+            highlightText: "int[] numbers = {10, 20, 30, 40, 50};",
+            tip: "This allocates memory for 5 integers in sequence"
+          },
+          {
+            title: "Element Access",
+            description: "Access first element using index 0 - direct memory access in O(1) time",
+            highlightText: "int firstElement = numbers[0];",
+            tip: "Arrays provide instant access to any element by index"
+          },
+          {
+            title: "Element Update",
+            description: "Update element at index 2 - direct assignment to memory location",
+            highlightText: "numbers[2] = 35;",
+            tip: "This changes the value stored at that memory location"
+          },
+          {
+            title: "Array Traversal",
+            description: "Loop through each index from 0 to length-1 to visit all elements",
+            highlightText: "for(int i = 0; i < numbers.length; i++)",
+            tip: "This is how you process every element in the array"
+          },
+          {
+            title: "Element Processing",
+            description: "Print each element with its position for demonstration",
+            highlightText: "System.out.println(\"Index \" + i + \": \" + numbers[i]);",
+            tip: "This shows the relationship between indices and values"
+          }
         ]
       }
     ],
@@ -7946,6 +8003,227 @@ int findFirst(int[] arr, int target) {
         links: [
           { platform: "LeetCode", url: "https://leetcode.com/problems/search-in-rotated-sorted-array/" }
         ]
+      },
+      {
+        "title": "Binary Search",
+        "difficulty": "Easy",
+        "rating": 4.0,
+        "description": "Find a target element in a sorted array using binary search.",
+        "concepts": ["Binary Search", "Array"],
+        "hints": [
+          "Divide the search space in half at each step",
+          "Compare target with middle element",
+          "Adjust search range based on comparison"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/binary-search/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/binary-search/" }
+        ]
+      },
+      {
+        "title": "Find Minimum in Rotated Sorted Array",
+        "difficulty": "Medium",
+        "rating": 4.2,
+        "description": "Find the minimum element in a rotated sorted array with no duplicates.",
+        "concepts": ["Binary Search", "Array Rotation"],
+        "hints": [
+          "Minimum element is where sorted order breaks",
+          "Compare mid with endpoints to find unsorted half",
+          "Minimum lies in unsorted half"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/" }
+        ]
+      },
+      {
+        "title": "Search Insert Position",
+        "difficulty": "Easy",
+        "rating": 4.1,
+        "description": "Find the index where a target should be inserted in a sorted array to maintain order.",
+        "concepts": ["Binary Search", "Array"],
+        "hints": [
+          "Use binary search to find target or its insertion point",
+          "Return left pointer when target is not found",
+          "Handle edge cases like empty array"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/search-insert-position/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/" }
+        ]
+      },
+      {
+        "title": "Find First and Last Position of Element in Sorted Array",
+        "difficulty": "Medium",
+        "rating": 4.3,
+        "description": "Find the starting and ending position of a target value in a sorted array.",
+        "concepts": ["Binary Search", "Array"],
+        "hints": [
+          "Use two binary searches: one for first position, one for last",
+          "Adjust binary search to find leftmost or rightmost occurrence",
+          "Return [-1, -1] if target not found"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/find-first-and-last-positions-of-an-element-in-a-sorted-array/" }
+        ]
+      },
+      {
+        "title": "Sqrt(x)",
+        "difficulty": "Easy",
+        "rating": 4.0,
+        "description": "Compute and return the integer square root of a non-negative integer.",
+        "concepts": ["Binary Search", "Math"],
+        "hints": [
+          "Use binary search to find the largest integer whose square is <= x",
+          "Search range is from 0 to x",
+          "Handle edge cases like x = 0 or 1"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/sqrtx/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/square-root-of-an-integer/" }
+        ]
+      },
+      {
+        "title": "Median of Two Sorted Arrays",
+        "difficulty": "Hard",
+        "rating": 4.5,
+        "description": "Find the median of two sorted arrays of different sizes.",
+        "concepts": ["Binary Search", "Array"],
+        "hints": [
+          "Use binary search on the smaller array to partition both arrays",
+          "Ensure partitions have equal or nearly equal lengths",
+          "Check if partition is valid by comparing boundary elements"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/" }
+        ]
+      },
+      {
+        "title": "Peak Element",
+        "difficulty": "Medium",
+        "rating": 4.2,
+        "description": "Find a peak element in an array where it is greater than its neighbors.",
+        "concepts": ["Binary Search", "Array"],
+        "hints": [
+          "Use binary search to find a peak",
+          "Compare mid element with neighbors to decide which half to explore",
+          "A peak always exists in a non-empty array"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/find-peak-element/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/" }
+        ]
+      },
+      {
+        "title": "Search a 2D Matrix",
+        "difficulty": "Medium",
+        "rating": 4.3,
+        "description": "Search for a value in a sorted 2D matrix where each row and column is sorted.",
+        "concepts": ["Binary Search", "Matrix"],
+        "hints": [
+          "Treat the 2D matrix as a flattened sorted array",
+          "Use binary search with row and column index conversion",
+          "Check matrix boundaries and edge cases"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/search-a-2d-matrix/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/search-in-row-wise-and-column-wise-sorted-matrix/" }
+        ]
+      },
+      {
+        "title": "Capacity To Ship Packages Within D Days",
+        "difficulty": "Medium",
+        "rating": 4.1,
+        "description": "Find the minimum ship capacity to ship all packages within D days.",
+        "concepts": ["Binary Search", "Array"],
+        "hints": [
+          "Use binary search on possible capacities (min: max package weight, max: sum of weights)",
+          "For each capacity, check if packages can be shipped in D days",
+          "Adjust search range based on feasibility"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/" }
+        ]
+      },
+      {
+        "title": "Find the Smallest Divisor Given a Threshold",
+        "difficulty": "Medium",
+        "rating": 4.0,
+        "description": "Find the smallest divisor such that the sum of ceiling divisions of an array is less than or equal to a threshold.",
+        "concepts": ["Binary Search", "Math"],
+        "hints": [
+          "Use binary search on possible divisors (1 to max element)",
+          "Calculate sum of ceiling divisions for each divisor",
+          "Adjust range based on whether sum exceeds threshold"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/" }
+        ]
+      },
+      {
+        "title": "Koko Eating Bananas",
+        "difficulty": "Medium",
+        "rating": 4.2,
+        "description": "Find the minimum eating speed for Koko to eat all bananas within H hours.",
+        "concepts": ["Binary Search", "Array"],
+        "hints": [
+          "Use binary search on possible eating speeds (1 to max pile size)",
+          "Calculate total hours needed for each speed",
+          "Adjust range based on whether hours exceed H"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/koko-eating-bananas/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/minimum-time-to-finish-tasks-without-skipping-two-consecutive/" }
+        ]
+      },
+      {
+        "title": "Find K-th Smallest Pair Distance",
+        "difficulty": "Hard",
+        "rating": 4.4,
+        "description": "Find the k-th smallest distance among all pairs in a sorted array.",
+        "concepts": ["Binary Search", "Two Pointers"],
+        "hints": [
+          "Use binary search on possible distances (0 to max difference)",
+          "Count pairs with distance less than or equal to mid using two pointers",
+          "Adjust range based on count relative to k"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/" }
+        ]
+      },
+      {
+        "title": "Aggressive Cows",
+        "difficulty": "Medium",
+        "rating": 4.3,
+        "description": "Place k cows in stalls to maximize the minimum distance between any two cows.",
+        "concepts": ["Binary Search", "Array"],
+        "hints": [
+          "Use binary search on possible minimum distances",
+          "Check if k cows can be placed with at least that distance",
+          "Maximize the minimum distance by adjusting range"
+        ],
+        "links": [
+          { "platform": "Codeforces", "url": "https://codeforces.com/problemset/problem/118/D" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/place-k-elements-such-that-minimum-distance-is-maximized/" }
+        ]
+      },
+      {
+        "title": "Ceil in a BST",
+        "difficulty": "Medium",
+        "rating": 4.2,
+        "description": "Find the smallest element in a binary search tree that is greater than or equal to a given value.",
+        "concepts": ["Binary Search", "Binary Search Tree"],
+        "hints": [
+          "Traverse the BST, updating ceil when a larger but closer value is found",
+          "Go left if current node value is greater than target",
+          "Go right if current node value is less than target"
+        ],
+        "links": [
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/" },
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/closest-binary-search-tree-value/" }
+        ]
       }
     ]
   },
@@ -8159,6 +8437,182 @@ Map<Character, Integer> countFrequency(String s) {
         links: [
           { platform: "LeetCode", url: "https://leetcode.com/problems/two-sum/" }
         ]
+      },
+      {
+        "title": "Ransom Note",
+        "difficulty": "Easy",
+        "rating": 4.0,
+        "description": "Determine if a ransom note can be constructed from a given magazine string.",
+        "concepts": ["Hash Map", "String"],
+        "hints": [
+          "Use a hash map to count character frequencies in magazine",
+          "Check if ransom note characters are available in sufficient quantity",
+          "Handle case sensitivity and spaces"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/ransom-note/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/check-if-characters-of-one-string-can-be-used-to-form-another-string/" }
+        ]
+      },
+      {
+        "title": "LRU Cache",
+        "difficulty": "Medium",
+        "rating": 4.6,
+        "description": "Design a Least Recently Used (LRU) cache with get and put operations in O(1) time.",
+        "concepts": ["Hash Map", "Doubly Linked List"],
+        "hints": [
+          "Use a hash map to store key-node pairs",
+          "Maintain a doubly linked list for recency order",
+          "Move accessed nodes to front and remove from tail"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/lru-cache/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/lru-cache-implementation/" }
+        ]
+      },
+      {
+        "title": "Group Anagrams",
+        "difficulty": "Medium",
+        "rating": 4.5,
+        "description": "Group a list of strings into anagrams using a hash map.",
+        "concepts": ["Hash Map", "String"],
+        "hints": [
+          "Sort each string to create a key for the hash map",
+          "Group strings with identical sorted characters",
+          "Use character frequency array as key for optimization"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/group-anagrams/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/" }
+        ]
+      },
+      {
+        "title": "Valid Sudoku",
+        "difficulty": "Medium",
+        "rating": 4.3,
+        "description": "Determine if a 9x9 Sudoku board is valid by checking rows, columns, and sub-boxes.",
+        "concepts": ["Hash Map", "Array"],
+        "hints": [
+          "Use hash sets to track numbers in each row, column, and box",
+          "Check for duplicates while iterating through the board",
+          "Handle empty cells (denoted by '.') correctly"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/valid-sudoku/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/check-if-given-sudoku-board-configuration-is-valid-or-not/" }
+        ]
+      },
+      {
+        "title": "Contains Duplicate",
+        "difficulty": "Easy",
+        "rating": 4.1,
+        "description": "Determine if an array contains any duplicate elements using a hash set.",
+        "concepts": ["Hash Map", "Array"],
+        "hints": [
+          "Add elements to a hash set while checking for duplicates",
+          "Return true if an element is already in the set",
+          "Single pass achieves O(n) time complexity"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/contains-duplicate/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/check-given-array-contains-duplicate-elements-within-k-distance/" }
+        ]
+      },
+      {
+        "title": "Subarray Sum Equals K",
+        "difficulty": "Medium",
+        "rating": 4.4,
+        "description": "Find the number of subarrays with sum equal to k in an array.",
+        "concepts": ["Hash Map", "Prefix Sum"],
+        "hints": [
+          "Use a hash map to store cumulative sum frequencies",
+          "For each sum, check if sum-k exists in the map",
+          "Handle negative numbers and edge cases"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/subarray-sum-equals-k/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/" }
+        ]
+      },
+      {
+        "title": "Design HashMap",
+        "difficulty": "Easy",
+        "rating": 4.2,
+        "description": "Implement a hash map with put, get, and remove operations.",
+        "concepts": ["Hash Map", "Array"],
+        "hints": [
+          "Use an array with chaining (linked lists) for collision handling",
+          "Compute hash value using modulo for indexing",
+          "Handle negative keys and large inputs"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/design-hashmap/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/implementing-hash-table-in-c/" }
+        ]
+      },
+      {
+        "title": "Top K Frequent Elements",
+        "difficulty": "Medium",
+        "rating": 4.5,
+        "description": "Find the k most frequent elements in an array using a hash map.",
+        "concepts": ["Hash Map", "Heap"],
+        "hints": [
+          "Use a hash map to count element frequencies",
+          "Use a min-heap or bucket sort to get top k elements",
+          "Handle ties and edge cases for k"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/top-k-frequent-elements/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/find-k-numbers-with-most-occurrences-in-the-given-array/" }
+        ]
+      },
+      {
+        "title": "Longest Substring Without Repeating Characters",
+        "difficulty": "Medium",
+        "rating": 4.7,
+        "description": "Find the length of the longest substring without repeating characters in a string.",
+        "concepts": ["Hash Map", "Sliding Window"],
+        "hints": [
+          "Use a hash map to store character indices",
+          "Maintain a sliding window and update start when a repeat is found",
+          "Track maximum length during iteration"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/" }
+        ]
+      },
+      {
+        "title": "Find the Duplicate Number",
+        "difficulty": "Medium",
+        "rating": 4.3,
+        "description": "Find the duplicate number in an array of n+1 integers where each integer is between 1 and n.",
+        "concepts": ["Hash Map", "Floyd's Cycle Detection"],
+        "hints": [
+          "Use a hash set to detect the first duplicate",
+          "Alternatively, use Floyd’s cycle detection for O(1) space",
+          "Avoid modifying the input array"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/find-the-duplicate-number/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/" }
+        ]
+      },
+      {
+        "title": "Intersection of Two Arrays",
+        "difficulty": "Easy",
+        "rating": 4.0,
+        "description": "Find the intersection of two arrays, returning each element as many times as it appears in both arrays.",
+        "concepts": ["Hash Map", "Array"],
+        "hints": [
+          "Use a hash map to store frequency of elements in the smaller array",
+          "Check elements of the second array against the hash map",
+          "Decrement frequency to handle duplicates correctly"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/intersection-of-two-arrays-ii/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/find-union-and-intersection-of-two-unsorted-arrays/" }
+        ]
       }
     ]
   },
@@ -8358,6 +8812,118 @@ int knapsack(int[] weights, int[] values, int capacity) {
         ],
         links: [
           { platform: "LeetCode", url: "https://leetcode.com/problems/climbing-stairs/" }
+        ]
+      },
+      {
+        "title": "Longest Common Subsequence",
+        "difficulty": "Medium",
+        "rating": 4.5,
+        "description": "Find the length of the longest common subsequence between two strings.",
+        "concepts": ["Dynamic Programming", "String"],
+        "hints": [
+          "Use a 2D DP table to store subsequence lengths",
+          "If characters match, add 1 to the diagonal value",
+          "If characters differ, take max of left or top"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/longest-common-subsequence/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/" }
+        ]
+      },
+      {
+        "title": "Knapsack Problem",
+        "difficulty": "Medium",
+        "rating": 4.6,
+        "description": "Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value.",
+        "concepts": ["Dynamic Programming"],
+        "hints": [
+          "Use a 2D DP table to store maximum value for each capacity",
+          "For each item, decide whether to include it or not",
+          "Optimize space by using a 1D array"
+        ],
+        "links": [
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/" },
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/partition-equal-subset-sum/" }
+        ]
+      },
+      {
+        "title": "Maximum Subarray",
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "description": "Find the contiguous subarray within a one-dimensional numeric array which has the largest sum.",
+        "concepts": ["Dynamic Programming", "Kadane's Algorithm"],
+        "hints": [
+          "Use Kadane’s algorithm to track max sum ending at each position",
+          "At each index, decide to start a new subarray or extend the existing one",
+          "Keep track of global maximum sum"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/maximum-subarray/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/" }
+        ]
+      },
+      {
+        "title": "Edit Distance",
+        "difficulty": "Hard",
+        "rating": 4.7,
+        "description": "Given two strings, find the minimum number of operations (insert, delete, replace) to convert one string into another.",
+        "concepts": ["Dynamic Programming", "String"],
+        "hints": [
+          "Use a 2D DP table to store minimum operations",
+          "If characters match, no operation is needed",
+          "For each cell, take minimum of insert, delete, or replace"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/edit-distance/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/edit-distance-dp-5/" }
+        ]
+      },
+      {
+        "title": "Longest Increasing Subsequence",
+        "difficulty": "Medium",
+        "rating": 4.6,
+        "description": "Find the length of the longest strictly increasing subsequence in an array.",
+        "concepts": ["Dynamic Programming"],
+        "hints": [
+          "Use a DP array where dp[i] represents the length of LIS ending at index i",
+          "For each element, check all previous elements to find valid increasing subsequences",
+          "Can be optimized using binary search for O(n log n)"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/longest-increasing-subsequence/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/" }
+        ]
+      },
+      {
+        "title": "Coin Change",
+        "difficulty": "Medium",
+        "rating": 4.4,
+        "description": "Given coins of different denominations and a total amount, find the minimum number of coins needed to make up that amount.",
+        "concepts": ["Dynamic Programming"],
+        "hints": [
+          "Use a DP array where dp[i] represents min coins for amount i",
+          "For each amount, try all coins and take the minimum",
+          "Handle cases where amount cannot be made"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/coin-change/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/coin-change-dp-7/" }
+        ]
+      },
+      {
+        "title": "Fibonacci Number",
+        "difficulty": "Easy",
+        "rating": 4.2,
+        "description": "Compute the nth Fibonacci number where each number is the sum of the two preceding ones.",
+        "concepts": ["Dynamic Programming"],
+        "hints": [
+          "Use a DP array or two variables to store previous numbers",
+          "Base cases: F(0)=0, F(1)=1",
+          "Can optimize space by only storing last two numbers"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/fibonacci-number/" },
+          { "platform": "Codeforces", "url": "https://codeforces.com/problemset/problem/577/A" }
         ]
       }
     ]
@@ -8592,7 +9158,166 @@ int minMeetingRooms(int[][] intervals) {
         links: [
           { platform: "LeetCode", url: "https://leetcode.com/problems/jump-game/" }
         ]
+      },
+      {
+        "title": "Minimum Number of Arrows to Burst Balloons",
+        "difficulty": "Medium",
+        "rating": 4.3,
+        "description": "Find the minimum number of arrows needed to burst all balloons, given their start and end points.",
+        "concepts": ["Greedy", "Interval Scheduling"],
+        "hints": [
+          "Sort intervals by end points",
+          "Use a greedy approach to select non-overlapping intervals",
+          "Count arrows needed for overlapping groups"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/find-minimum-number-of-arrows-to-burst-balloons/" }
+        ]
+      },
+      {
+        "title": "Activity Selection Problem",
+        "difficulty": "Easy",
+        "rating": 4.2,
+        "description": "Given a set of activities with start and end times, select the maximum number of non-overlapping activities.",
+        "concepts": ["Greedy", "Interval Scheduling"],
+        "hints": [
+          "Sort activities by finish time",
+          "Pick the first activity and then greedily select the next non-overlapping one",
+          "Track the last selected activity’s end time"
+        ],
+        "links": [
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/" },
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/non-overlapping-intervals/" }
+        ]
+      },
+      {
+        "title": "Best Time to Buy and Sell Stock",
+        "difficulty": "Easy",
+        "rating": 4.5,
+        "description": "Given an array of stock prices, find the maximum profit by buying and selling once.",
+        "concepts": ["Greedy", "Array"],
+        "hints": [
+          "Track the minimum price seen so far",
+          "Calculate potential profit at each step",
+          "Update maximum profit if current profit is higher"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/stock-buy-sell/" }
+        ]
+      },
+      {
+        "title": "Gas Station",
+        "difficulty": "Medium",
+        "rating": 4.4,
+        "description": "Find the starting gas station to complete a circular route, given gas and cost at each station.",
+        "concepts": ["Greedy", "Array"],
+        "hints": [
+          "Track total gas and current gas surplus",
+          "If current surplus becomes negative, reset start point",
+          "Check if total gas is sufficient for the circuit"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/gas-station/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/" }
+        ]
+      },
+      {
+        "title": "Assign Cookies",
+        "difficulty": "Easy",
+        "rating": 4.0,
+        "description": "Maximize the number of content children by assigning cookies based on greed factor and cookie size.",
+        "concepts": ["Greedy", "Array"],
+        "hints": [
+          "Sort children’s greed factors and cookie sizes",
+          "Assign cookies to children greedily if cookie size is sufficient",
+          "Use two pointers to track assignments"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/assign-cookies/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/assign-cookies-to-k-children/" }
+        ]
+      },
+      {
+        "title": "Queue Reconstruction by Height",
+        "difficulty": "Medium",
+        "rating": 4.3,
+        "description": "Reconstruct a queue from a list of people with their heights and the number of taller people in front.",
+        "concepts": ["Greedy", "Array"],
+        "hints": [
+          "Sort people by height in descending order, and by k-value in ascending order",
+          "Insert each person at index equal to their k-value",
+          "Greedily place taller people first"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/queue-reconstruction-by-height/" }
+        ]
+      },
+      {
+        "title": "Fractional Knapsack",
+        "difficulty": "Medium",
+        "rating": 4.2,
+        "description": "Given weights and values of items, maximize value in a knapsack of capacity W, allowing fractional items Venue.",
+        "concepts": ["Greedy", "Sorting"],
+        "hints": [
+          "Sort items by value-to-weight ratio in descending order",
+          "Take as much as possible of the highest ratio items",
+          "Handle fractional items for remaining capacity"
+        ],
+        "links": [
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/fractional-knapsack-problem/" },
+          { "platform": "Codeforces", "url": "https://codeforces.com/problemset/problem/489/B" }
+        ]
+      },
+      {
+        "title": "Jump Game II",
+        "difficulty": "Medium",
+        "rating": 4.3,
+        "description": "Find the minimum number of jumps to reach the last index in an array, given max jump length at each index.",
+        "concepts": ["Greedy", "Array"],
+        "hints": [
+          "Track farthest reachable position and current jump range",
+          "Increment jumps when you reach the end of current range",
+          "Update range to farthest reachable position"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/jump-game-ii/" },
+          { "platform": "GeeksforGeeks", "url": "https://www.geeksforgeeks.org/minimum-number-jumps-reach-endset-2-o1-space/" }
+        ]
+      },
+      {
+        "title": "Minimum Cost to Hire K Workers",
+        "difficulty": "Hard",
+        "rating": 4.1,
+        "description": "Hire exactly K workers with minimum cost, given quality and wage, ensuring wage-to-quality ratio is consistent.",
+        "concepts": ["Greedy", "Heap"],
+        "hints": [
+          "Sort workers by wage-to-quality ratio",
+          "Use a max heap to track quality of selected workers",
+          "Greedily select workers with lowest ratio while maintaining K"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/" }
+        ]
+      },
+      {
+        "title": "Water Bottles",
+        "difficulty": "Easy",
+        "rating": 4.0,
+        "description": "Given numBottles full water bottles, exchange empty bottles for full ones with numExchange bottles per exchange. Return maximum number of bottles you can drink.",
+        "concepts": ["Greedy", "Math"],
+        "hints": [
+          "Track total bottles drunk",
+          "Greedily exchange empty bottles for full ones",
+          "Continue until fewer than numExchange empty bottles remain"
+        ],
+        "links": [
+          { "platform": "LeetCode", "url": "https://leetcode.com/problems/water-bottles/" },
+          { "platform": "Codeforces", "url": "https://codeforces.com/problemset/problem/1472/A" }
+        ]
       }
     ]
-  }
+  },
+  
 ];

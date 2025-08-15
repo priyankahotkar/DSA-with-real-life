@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { topics } from '../data/topics';
+import { Database } from 'lucide-react';
 
 const TopicGrid = () => {
   const containerVariants = {
@@ -25,7 +26,7 @@ const TopicGrid = () => {
       viewport={{ once: true }}
       className="topic-grid"
     >
-      {topics.map((topic) => (
+      {topics.filter(topic => topic && topic.id).map((topic) => (
         <motion.div
           key={topic.id}
           variants={itemVariants}
@@ -35,7 +36,7 @@ const TopicGrid = () => {
           <Link to={`/topic/${topic.id}`} className="topic-link">
             <div className="topic-header">
               <div className="topic-icon" style={{ backgroundColor: topic.color + '20' }}>
-                <topic.icon size={24} color={topic.color} />
+                {topic.icon ? <topic.icon size={24} color={topic.color} /> : <Database size={24} color={topic.color} />}
               </div>
               <div className="topic-meta">
                 <span className="difficulty" data-level={topic.difficulty}>
@@ -53,12 +54,12 @@ const TopicGrid = () => {
                 <strong>{topic.concepts}</strong> Concepts
               </span>
               <span className="stat">
-                <strong>{topic.problems}</strong> Problems
+                <strong>{topic.problemSet.length}</strong> Problems
               </span>
             </div>
             
             <div className="topic-tags">
-              {topic.tags.slice(0, 3).map((tag, index) => (
+              {topic.tags?.slice(0, 3).map((tag, index) => (
                 <span key={index} className="tag">{tag}</span>
               ))}
             </div>

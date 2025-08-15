@@ -42,7 +42,7 @@ const Footer = () => {
             </p>
             <div className="footer-social">
               <a 
-                href="https://github.com" 
+                href="https://github.com/priyankahotkar" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link"
@@ -51,7 +51,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.comin/priyanka-hotkar-3a667a259/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link"
@@ -69,7 +69,7 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a 
-                href="mailto:contact@dsalearning.com" 
+                href="mailto:unlimitlytech@gmail.com" 
                 className="social-link"
                 aria-label="Email"
               >
@@ -90,8 +90,8 @@ const Footer = () => {
             <ul className="footer-links-list">
               <li><Link to="/" className="footer-link">Home</Link></li>
               <li><Link to="/#topics" className="footer-link">Topics</Link></li>
-              <li><Link to="/#features" className="footer-link">Features</Link></li>
-              <li><Link to="/#about" className="footer-link">About</Link></li>
+              <li><Link to="/features" className="footer-link">Features</Link></li>
+              <li><Link to="/about" className="footer-link">About</Link></li>
             </ul>
           </motion.div>
 
@@ -124,7 +124,7 @@ const Footer = () => {
             <ul className="footer-links-list">
               <li>
                 <a 
-                  href="https://leetcode.com" 
+                  href="https://leetcode.com/priyankahotkar_/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="footer-link"
@@ -134,7 +134,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://hackerrank.com" 
+                  href="https://hackerrank.com/profile/priyankahotkar4" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="footer-link"
@@ -144,7 +144,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://geeksforgeeks.org" 
+                  href="https://geeksforgeeks.org/user/priyankafkfb/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="footer-link"
@@ -154,7 +154,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/priyankahotkar" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="footer-link"
@@ -177,7 +177,7 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <Mail size={16} />
-                <span>contact@dsalearning.com</span>
+                <span>unlimitlytech@gmail.com</span>
               </div>
               <div className="contact-item">
                 <Users size={16} />
@@ -207,9 +207,9 @@ const Footer = () => {
               </p>
             </div>
             <div className="footer-bottom-links">
-              <a href="/privacy" className="footer-bottom-link">Privacy Policy</a>
-              <a href="/terms" className="footer-bottom-link">Terms of Service</a>
-              <a href="/cookies" className="footer-bottom-link">Cookie Policy</a>
+              <span className="footer-bottom-link">Privacy Policy</span>
+              <span className="footer-bottom-link">Terms of Service</span>
+              <span className="footer-bottom-link">Cookie Policy</span>
             </div>
           </div>
         </motion.div>
@@ -234,4 +234,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 

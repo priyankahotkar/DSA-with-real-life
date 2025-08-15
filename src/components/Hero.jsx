@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -32,9 +33,9 @@ const Hero = () => {
           </p>
           
           <div className="hero-actions">
-            <a href="#topics" className="btn-primary">
+            <Link to="/#topics" className="btn-primary">
               Start Learning <ArrowRight size={18} />
-            </a>
+            </Link>
             <button className="btn-secondary">
               <Play size={18} />
               Watch Demo

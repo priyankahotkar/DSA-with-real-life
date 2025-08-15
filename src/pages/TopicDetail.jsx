@@ -6,6 +6,7 @@ import CodeVisualizer from '../components/CodeVisualizer';
 import ConceptVisuals from '../components/ConceptVisuals';
 import ProblemSet from '../components/ProblemSet';
 import PatternSection from '../components/PatternSection';
+import AnimatedExplanation from '../components/AnimatedExplanation';
 
 const TopicDetail = () => {
   const { topicId } = useParams();
@@ -73,9 +74,11 @@ const TopicDetail = () => {
               <BookOpen size={24} />
               What is {topic.title}?
             </h2>
-            <div className="content-card">
-              <div dangerouslySetInnerHTML={{ __html: topic.explanation }} />
-            </div>
+            <AnimatedExplanation 
+              explanation={topic.explanation}
+              steps={topic.explanationSteps || []}
+              autoPlayInterval={4000}
+            />
           </motion.section>
 
           <motion.section

@@ -115,21 +115,41 @@ const ConceptVisuals = ({ topic }) => {
 
   const GraphVisual = () => (
     <div className="graph-visual">
-      <div className="graph-node" style={{ left: '10%', top: '30%' }}>A</div>
-      <div className="graph-node" style={{ left: '40%', top: '20%' }}>B</div>
-      <div className="graph-node" style={{ left: '70%', top: '35%' }}>C</div>
-      <div className="graph-node" style={{ left: '30%', top: '70%' }}>D</div>
-      <div className="graph-node" style={{ left: '70%', top: '75%' }}>E</div>
-      <svg className="graph-edges">
-        <line x1="14%" y1="34%" x2="44%" y2="24%" />
-        <line x1="44%" y1="24%" x2="74%" y2="39%" />
-        <line x1="14%" y1="34%" x2="34%" y2="74%" />
-        <line x1="34%" y1="74%" x2="74%" y2="79%" />
-        <line x1="44%" y1="24%" x2="34%" y2="74%" />
+      <svg className="graph-edges" viewBox="0 0 300 200">
+        {/* Edges with better positioning */}
+        <line x1="60" y1="60" x2="120" y2="40" className="graph-edge" />
+        <line x1="120" y1="40" x2="180" y2="70" className="graph-edge" />
+        <line x1="60" y1="60" x2="90" y2="140" className="graph-edge" />
+        <line x1="90" y1="140" x2="180" y2="150" className="graph-edge" />
+        <line x1="120" y1="40" x2="90" y2="140" className="graph-edge" />
       </svg>
+      
+      {/* Nodes with better positioning and styling */}
+      <div className="graph-node" style={{ left: '20%', top: '30%' }}>
+        <span className="node-label">A</span>
+      </div>
+      <div className="graph-node" style={{ left: '40%', top: '20%' }}>
+        <span className="node-label">B</span>
+      </div>
+      <div className="graph-node" style={{ left: '60%', top: '35%' }}>
+        <span className="node-label">C</span>
+      </div>
+      <div className="graph-node" style={{ left: '30%', top: '70%' }}>
+        <span className="node-label">D</span>
+      </div>
+      <div className="graph-node" style={{ left: '60%', top: '75%' }}>
+        <span className="node-label">E</span>
+      </div>
+      
       <div className="traversal-info">
-        <div>BFS from A: A → B → D → C → E</div>
-        <div>DFS from A: A → B → C → E → D</div>
+        <div className="traversal-item">
+          <span className="traversal-label">BFS:</span>
+          <span className="traversal-path">A → B → D → C → E</span>
+        </div>
+        <div className="traversal-item">
+          <span className="traversal-label">DFS:</span>
+          <span className="traversal-path">A → B → C → E → D</span>
+        </div>
       </div>
     </div>
   );
@@ -284,5 +304,6 @@ const ConceptVisuals = ({ topic }) => {
 };
 
 export default ConceptVisuals;
+
 
 

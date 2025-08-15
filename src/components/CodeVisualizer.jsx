@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Play, Pause, RotateCcw, ChevronRight } from 'lucide-react';
+import StepByStepExplainer from './StepByStepExplainer';
 
 const CodeVisualizer = ({ topic }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentStep, setCurrentStep] = useState(0);
   const [selectedExample, setSelectedExample] = useState(0);
 
   const examples = topic.codeExamples || [];
@@ -13,14 +12,7 @@ const CodeVisualizer = ({ topic }) => {
 
   const currentExample = examples[selectedExample];
 
-  const handlePlay = () => {
-    setIsPlaying(!isPlaying);
-  };
 
-  const handleReset = () => {
-    setCurrentStep(0);
-    setIsPlaying(false);
-  };
 
   return (
     <div className="code-visualizer">
@@ -36,54 +28,32 @@ const CodeVisualizer = ({ topic }) => {
             </button>
           ))}
         </div>
-        
-        <div className="visualizer-controls">
-          <button className="control-btn" onClick={handlePlay}>
-            {isPlaying ? <Pause size={18} /> : <Play size={18} />}
-          </button>
-          <button className="control-btn" onClick={handleReset}>
-            <RotateCcw size={18} />
-          </button>
-        </div>
       </div>
 
       <div className="visualizer-content">
-        <div className="code-section">
-          <h4>Implementation</h4>
-          <pre className="code-block">
-            <code>{currentExample.code}</code>
-          </pre>
-        </div>
-
-        <div className="visual-section">
-          <h4>Visualization</h4>
-          <div className="visual-container">
-            <motion.div
-              className="visual-demo"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              {currentExample.visualization}
-            </motion.div>
+        {/* Visualization Section - At the top */}
+        {currentExample.visualization && (
+          <div className="visual-section">
+            <h4>Visual Representation</h4>
+            <div className="visual-container">
+              <motion.div
+                className="visual-demo"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                {currentExample.visualization}
+              </motion.div>
+            </div>
           </div>
-        </div>
-      </div>
+        )}
 
-      <div className="step-explanation">
-        <h4>Step-by-Step Explanation</h4>
-        <div className="steps">
-          {currentExample.steps?.map((step, index) => (
-            <motion.div
-              key={index}
-              className={`step ${index === currentStep ? 'active' : ''}`}
-              initial={{ opacity: 0.5 }}
-              animate={{ opacity: index <= currentStep ? 1 : 0.5 }}
-            >
-              <span className="step-number">{index + 1}</span>
-              <p>{step}</p>
-            </motion.div>
-          ))}
-        </div>
+        {/* Enhanced Step-by-Step Explainer */}
+        <StepByStepExplainer 
+          steps={currentExample.steps || []}
+          code={currentExample.code || ''}
+          autoPlayInterval={4000}
+        />
       </div>
     </div>
   );
