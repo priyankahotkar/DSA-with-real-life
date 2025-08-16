@@ -8,6 +8,7 @@ import About from './pages/About';
 import './App.css';
 import Features from './components/Features';
 import Community from './pages/Community';
+import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from 'react';
 
   // when i change the url, i want to scroll to the top smoothly
@@ -24,11 +25,13 @@ function ScrollToTop() {
   return null;
 }
 
+
 function App() {
 
   return (
     <Router>
       <div className="App">
+        <Analytics/>
         <Header />
        {/* ScrollToTop will handle smooth scrolling on route change */}
         <ScrollToTop />
@@ -46,6 +49,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    
   );
 }
 
