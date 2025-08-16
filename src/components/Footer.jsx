@@ -200,6 +200,9 @@ const Footer = () => {
           transition={{ delay: 0.6 }}
         >
           <div className="footer-bottom-content">
+            <div className="footer-disclaimer" style={{ fontSize: '0.95rem', color: '#a3a3a3', marginBottom: '0.5rem' }}>
+              Disclaimer: Company tags are collected from publicly available community resources and are for educational use only. Not affiliated with or endorsed by any company.
+            </div>
             <div className="copyright">
               <p>
                 © {currentYear} DSA Learning Platform. Made with{' '}
