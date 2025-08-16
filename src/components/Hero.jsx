@@ -36,10 +36,15 @@ const Hero = () => {
             <Link to="/#topics" className="btn-primary">
               Start Learning <ArrowRight size={18} />
             </Link>
-            <button className="btn-secondary">
+            <a 
+              href="https://drive.google.com/file/d/1ckbmVvgo6nFIURXjiCxLSHtMxELl-e7L/view?usp=drive_link" 
+              className="btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Play size={18} />
               Watch Demo
-            </button>
+            </a>
           </div>
         </motion.div>
         
