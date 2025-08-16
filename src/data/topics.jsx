@@ -96,7 +96,7 @@ export const topics = [
     tags: ['Linear', 'Indexing', 'Memory'],
     description: 'Learn the fundamental building block of programming - arrays and their operations.',
     explanation: `
-      <div class="explanation-content">
+      <div class="explanation-content" >
         <h3>What is an Array?</h3>
         <p>Think of an array like a row of mailboxes in an apartment building. Each mailbox has a unique number (index) and can store one item (element). Just like you can quickly find mailbox #5, you can instantly access any element in an array using its index.</p>
         
@@ -1200,64 +1200,6 @@ public List<Integer> findDisappearedNumbersHashSet(int[] nums) {
         explanation: "The negative marking approach is space-efficient and in-place. We use the array itself to mark which numbers we've seen by making them negative. After marking, any positive numbers indicate missing values. The HashSet approach is simpler but uses extra space. Both approaches are efficient for this problem.",
         timeComplexity: "O(n)",
         spaceComplexity: "O(1) - Negative marking, O(n) - HashSet"
-      },
-      {
-        title: "Maximum Subarray",
-        difficulty: "Medium",
-        rating: 4.5,
-        description: "Find the contiguous subarray with the largest sum (Kadane's Algorithm).",
-        concepts: ["Dynamic Programming", "Kadane's Algorithm"],
-        hints: [
-          "Keep track of maximum sum ending at current position",
-          "Reset sum to 0 if it becomes negative",
-          "Update global maximum at each step"
-        ],
-        links: [
-          { platform: "LeetCode", url: "https://leetcode.com/problems/maximum-subarray/" }
-        ],
-        javaSolution: `// Maximum Subarray - Kadane's Algorithm
-public int maxSubArray(int[] nums) {
-    int maxSoFar = nums[0];
-    int maxEndingHere = nums[0];
-    
-    for(int i = 1; i < nums.length; i++) {
-        // Either extend previous subarray or start new one
-        maxEndingHere = Math.max(nums[i], maxEndingHere + nums[i]);
-        
-        // Update global maximum
-        maxSoFar = Math.max(maxSoFar, maxEndingHere);
-    }
-    
-    return maxSoFar;
-}
-
-// Maximum Subarray with indices (returns subarray bounds)
-public int[] maxSubArrayWithIndices(int[] nums) {
-    int maxSoFar = nums[0];
-    int maxEndingHere = nums[0];
-    int start = 0, end = 0;
-    int tempStart = 0;
-    
-    for(int i = 1; i < nums.length; i++) {
-        if(nums[i] > maxEndingHere + nums[i]) {
-            maxEndingHere = nums[i];
-            tempStart = i;
-        } else {
-            maxEndingHere = maxEndingHere + nums[i];
-        }
-        
-        if(maxEndingHere > maxSoFar) {
-            maxSoFar = maxEndingHere;
-            start = tempStart;
-            end = i;
-        }
-    }
-    
-    return new int[]{start, end, maxSoFar};
-}`,
-        explanation: "Kadane's algorithm maintains two variables: maxSoFar (global maximum) and maxEndingHere (maximum sum ending at current position). At each step, we decide whether to extend the previous subarray or start a new one. If the current sum becomes negative, we reset it to the current element.",
-        timeComplexity: "O(n)",
-        spaceComplexity: "O(1)"
       },
       {
         title: "Move Zeroes",

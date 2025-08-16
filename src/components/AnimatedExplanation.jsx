@@ -82,33 +82,22 @@ const AnimatedExplanation = ({ explanation, steps = [], autoPlayInterval = 4000 
 
   // Function to highlight specific text in the explanation
   const renderHighlightedExplanation = () => {
+    // Always render HTML properly
     if (!explanation || !highlightedText) {
       return <div dangerouslySetInnerHTML={{ __html: explanation }} />;
     }
 
-    // Simple text highlighting - you can enhance this with regex for more complex patterns
-    const parts = explanation.split(highlightedText);
+    // For highlighting, create a modified HTML string with highlighted spans
+    const highlightedHTML = explanation.replace(
+      new RegExp(`(${highlightedText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'),
+      '<span class="highlighted-text-inline">$1</span>'
+    );
+    
     return (
-      <div>
-        {parts.map((part, index) => (
-          <span key={index}>
-            {part}
-            {index < parts.length - 1 && (
-              <motion.span
-                className="highlighted-text"
-                initial={{ backgroundColor: 'rgba(59, 130, 246, 0.1)' }}
-                animate={{ 
-                  backgroundColor: 'rgba(59, 130, 246, 0.3)',
-                  boxShadow: '0 0 10px rgba(59, 130, 246, 0.5)'
-                }}
-                transition={{ duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
-              >
-                {highlightedText}
-              </motion.span>
-            )}
-          </span>
-        ))}
-      </div>
+      <div 
+        dangerouslySetInnerHTML={{ __html: highlightedHTML }}
+        className="highlighted-content"
+      />
     );
   };
 
