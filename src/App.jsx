@@ -8,11 +8,13 @@ import About from './pages/About';
 import './App.css';
 import Features from './components/Features';
 import Community from './pages/Community';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Analytics/>
         <Header />
         <AnimatePresence mode="wait">
           <Routes>
@@ -27,6 +29,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    
   );
 }
 
