@@ -54,7 +54,8 @@ const Community = () => {
           />
         </motion.div>
       </div>
-    </motion.div>
+      </motion.div>
+      
   );
 };
 
