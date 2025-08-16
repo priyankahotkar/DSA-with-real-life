@@ -5,18 +5,21 @@ A comprehensive, beginner-friendly platform for learning Data Structures and Alg
 ## Features
 
 ### **Beginner-Friendly Approach**
+
 - **Real-world analogies** for every concept (parking lots, train cars, family trees, etc.)
 - **Step-by-step explanations** as if the world's best teacher is explaining to the dumbest student
 - **Visual representations** for every data structure and algorithm
 - **Progressive difficulty** from basic concepts to advanced implementations
 
 ### **Comprehensive Java Implementation**
+
 - **Complete Java code** for every problem with multiple approaches
 - **Copy-to-clipboard** functionality for easy code reuse
 - **Alternative solutions** showing different problem-solving strategies
 - **Time and space complexity** analysis for every solution
 
 ### **Rich Problem Sets**
+
 - **25+ array problems** covering all major patterns
 - **30+ linked list problems** with cycle detection, merging, etc.
 - **20+ stack problems** including expression evaluation
@@ -30,12 +33,14 @@ A comprehensive, beginner-friendly platform for learning Data Structures and Alg
 - **35+ greedy algorithm problems** with correctness proofs
 
 ### **Interactive Visualizations**
+
 - **Animated data structure representations**
 - **Step-by-step algorithm execution**
 - **Real-time code visualization**
 - **Pattern recognition tools**
 
 ### **Learning Resources**
+
 - **Concept explanations** with real-world examples
 - **Common patterns** and when to use them
 - **Problem-solving strategies** and hints
@@ -67,10 +72,12 @@ project/
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm or yarn
 
 ### Installation
+
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -87,6 +94,7 @@ npm run build
 ```
 
 ### Usage
+
 1. **Browse Topics**: Start with the topic grid to see all available DSA concepts
 2. **Choose Difficulty**: Each topic has a difficulty level and estimated time
 3. **Learn Concepts**: Read real-world explanations and visual representations
@@ -97,18 +105,21 @@ npm run build
 ## 📖 Learning Path
 
 ### 🌱 **Beginner Level (2-3 hours each)**
+
 1. **Arrays** - Foundation of programming with contiguous memory
 2. **Linked Lists** - Dynamic data structures with pointers
 3. **Stacks** - LIFO operations and function call management
 4. **Queues** - FIFO operations and scheduling algorithms
 
 ### 🌿 **Intermediate Level (4-6 hours each)**
+
 5. **Trees** - Hierarchical data structures and traversal
 6. **Sorting** - Algorithm efficiency and optimization
 7. **Searching** - Binary search and optimization techniques
 8. **Hashing** - Fast lookup and collision resolution
 
 ### 🌳 **Advanced Level (8-12 hours each)**
+
 9. **Graphs** - Network structures and pathfinding
 10. **Dynamic Programming** - Optimization and memoization
 11. **Greedy Algorithms** - Local optimization strategies
@@ -116,6 +127,7 @@ npm run build
 ## 🎯 Problem Categories
 
 ### **Array Problems**
+
 - Two Pointers technique
 - Sliding Window algorithms
 - Kadane's algorithm
@@ -124,6 +136,7 @@ npm run build
 - Water trapping
 
 ### **Linked List Problems**
+
 - Fast and Slow pointers
 - Cycle detection
 - List reversal
@@ -131,18 +144,21 @@ npm run build
 - Nth node removal
 
 ### **Stack Problems**
+
 - Parentheses validation
 - Min stack design
 - Expression evaluation
 - Monotonic stack patterns
 
 ### **Queue Problems**
+
 - Stack-based queue
 - Circular queue
 - Recent calls counter
 - BFS implementations
 
 ### **Tree Problems**
+
 - Tree traversals (inorder, preorder, postorder)
 - Binary Search Tree operations
 - Tree validation
@@ -150,6 +166,7 @@ npm run build
 - Tree construction
 
 ### **Graph Problems**
+
 - BFS and DFS traversal
 - Cycle detection
 - Shortest path algorithms
@@ -183,17 +200,20 @@ npm run build
 ## 🔧 Customization
 
 ### Adding New Topics
+
 1. Edit `src/data/topics.jsx`
 2. Add topic object with required fields
 3. Include Java solutions and explanations
 4. Add visual components if needed
 
 ### Styling Changes
+
 1. Modify `src/App.css`
 2. Use CSS custom properties for theming
 3. Maintain responsive breakpoints
 
 ### Adding Problems
+
 1. Extend the problem set in topic data
 2. Include Java solutions with explanations
 3. Add complexity analysis
@@ -202,18 +222,21 @@ npm run build
 ## 📚 Learning Resources
 
 ### **External Platforms**
+
 - **LeetCode**: Premium problem sets and contests
 - **HackerRank**: Skill assessments and challenges
 - **Codeforces**: Competitive programming problems
 - **AtCoder**: Japanese competitive programming
 
 ### **Recommended Books**
+
 - "Introduction to Algorithms" (CLRS)
 - "Algorithm Design Manual" (Skiena)
 - "Cracking the Coding Interview" (McDowell)
 - "Elements of Programming Interviews" (Aziz)
 
 ### **Online Courses**
+
 - Coursera: Algorithms Part I & II (Princeton)
 - edX: Algorithms and Data Structures
 - MIT OpenCourseWare: Introduction to Algorithms
@@ -227,12 +250,20 @@ npm run build
 5. **Submit a pull request**
 
 ### **Contribution Guidelines**
-- Maintain beginner-friendly explanations
-- Include real-world analogies
-- Provide multiple Java solutions
-- Add complexity analysis
-- Test on multiple devices
 
+- We welcome contributions from developers worldwide 🌍.  
+  However, please note:
+- All contributions must follow the guidelines in [CONTRIBUTING.md](./CONTRIBUTING.md).
+- Fork → Implement → Submit PR (do not request direct write access).
+- Contributors will be acknowledged in commit history and release notes.
+- Ownership of the project remains with the repository owner.
+
+## 📜 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+
+> **Note**: The project is originally created and maintained by **Priyanka Hotkar**.  
+> Contributors are welcome to improve and extend the project, but ownership and project leadership remain with the original author.
 
 ## 🙏 Acknowledgments
 
@@ -252,4 +283,4 @@ npm run build
 
 **Happy Learning! 🎓✨**
 
-*Remember: The best way to learn DSA is through consistent practice and understanding the underlying concepts. This platform is designed to make that journey as smooth and enjoyable as possible.*
+_Remember: The best way to learn DSA is through consistent practice and understanding the underlying concepts. This platform is designed to make that journey as smooth and enjoyable as possible._
