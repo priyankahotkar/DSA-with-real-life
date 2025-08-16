@@ -1554,6 +1554,29 @@ body {
   font-size: 1rem;
 }
 
+/* Community Page Styles */
+.community-page {
+  padding-top: 100px;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+}
+
+.giscus-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .giscus-container {
+    padding: 2rem;
+  }
+}
+
+
 /* Contact Section */
 .contact-section {
   margin-bottom: 4rem;

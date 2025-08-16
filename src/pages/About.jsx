@@ -21,8 +21,8 @@ const About = () => {
   const stats = [
     { icon: Code, label: 'LeetCode Problems', value: '900+', link: 'https://leetcode.com/priyankahotkar_' },
     { icon: Trophy, label: 'Codeforces Rating', value: 'Div 3', link: 'https://codeforces.com/profile/priyankahotkar_' },
-    { icon: Star, label: 'Years of Experience', value: '3+', link: null },
-    { icon: Users, label: 'Students Helped', value: '100+', link: null }
+    { icon: Star, label: 'Years of Experience', value: '2+', link: null },
+    { icon: Users, label: 'Students Helped', value: '10+', link: null }
   ];
 
   const achievements = [

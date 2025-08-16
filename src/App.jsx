@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import TopicDetail from './pages/TopicDetail';
 import About from './pages/About';
 import './App.css';
+import Features from './components/Features';
+import Community from './pages/Community';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
             <Route path="/topic/:topicId" element={<TopicDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/community" element={<Community />} />
           </Routes>
         </AnimatePresence>
         <Footer />

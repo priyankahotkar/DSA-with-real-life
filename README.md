@@ -18,19 +18,11 @@ A comprehensive, beginner-friendly platform for learning Data Structures and Alg
 - **Alternative solutions** showing different problem-solving strategies
 - **Time and space complexity** analysis for every solution
 
-### **Rich Problem Sets**
+### **Community & Collaboration**
 
-- **25+ array problems** covering all major patterns
-- **30+ linked list problems** with cycle detection, merging, etc.
-- **20+ stack problems** including expression evaluation
-- **18+ queue problems** with circular queue implementations
-- **45+ tree problems** covering traversal, BST, and more
-- **60+ graph problems** with BFS, DFS, and pathfinding
-- **35+ sorting problems** with algorithm comparisons
-- **25+ searching problems** including binary search variations
-- **30+ hashing problems** with collision resolution
-- **50+ dynamic programming problems** with memoization
-- **35+ greedy algorithm problems** with correctness proofs
+- **Integrated Discussion Forum** powered by Giscus and GitHub Discussions.
+- **Ask questions**, share solutions, and connect with other learners.
+- **Persistent conversations** linked directly to the project repository.
 
 ### **Interactive Visualizations**
 
@@ -63,7 +55,7 @@ project/
 │   │   └── topics.jsx              # Comprehensive topic data
 │   ├── pages/
 │   │   ├── Home.jsx                # Landing page
-│   │   └── TopicDetail.jsx         # Detailed topic view
+│   │   ├── TopicDetail.jsx         # Detailed topic view
 │   └── App.jsx                     # Main application
 ├── public/                         # Static assets
 └── package.json                    # Dependencies

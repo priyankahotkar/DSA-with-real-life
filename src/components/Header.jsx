@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code, Home, BookOpen, User } from 'lucide-react';
+import { Code, Home, BookOpen, User, Users, Star } from 'lucide-react';
 import SearchBar from './SearchBar';
 
 const Header = () => {
@@ -41,6 +41,20 @@ const Header = () => {
             >
               <User size={18} />
               About
+            </Link>
+            <Link 
+              to="/features" 
+              className={`nav-link ${location.pathname === '/features' ? 'active' : ''}`}
+            >
+              <Star size={18} />
+              Features
+            </Link>
+            <Link 
+              to="/community" 
+              className={`nav-link ${location.pathname === '/community' ? 'active' : ''}`}
+            >
+              <Users size={18} />
+              Community
             </Link>
             <AnimatePresence mode="wait">
               <SearchBar />
