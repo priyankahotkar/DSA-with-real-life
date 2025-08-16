@@ -54,7 +54,7 @@ const Header = () => {
               className={`nav-link ${location.pathname.startsWith('/company') ? 'active' : ''}`}
             >
               <Building size={18} />
-              Companies
+              Company Specific Questions
             </Link>
             <Link 
               to="/community" 
