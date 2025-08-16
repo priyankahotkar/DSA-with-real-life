@@ -2640,7 +2640,7 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
   gap: 3rem;
-  padding: 3rem 0 2rem;
+  padding: 3rem 0 0;
   max-width: 100%;
 }
 
