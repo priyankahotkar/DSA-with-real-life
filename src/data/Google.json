@@ -1,0 +1,239 @@
+{
+"company": "Google",
+"questions": [
+{
+"title": "Two Sum",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/two-sum",
+"description": "Find indices of two numbers in an array that add up to a specific target."
+},
+{
+"title": "Roman to Integer",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/roman-to-integer",
+"description": "Convert a Roman numeral string to its integer value."
+},
+{
+"title": "Valid Parentheses",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/valid-parentheses",
+"description": "Determine if the input string has valid matching parentheses."
+},
+{
+"title": "Same Tree",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/same-tree",
+"description": "Check if two binary trees are identical in structure and node values."
+},
+{
+"title": "Symmetric Tree",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/symmetric-tree",
+"description": "Determine if a binary tree is symmetric around its center."
+},
+{
+"title": "Best Time to Buy and Sell Stock",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+"description": "Find the maximum profit from buying and selling a stock once."
+},
+{
+"title": "Diameter of Binary Tree",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/diameter-of-binary-tree",
+"description": "Find the diameter (longest path) of a binary tree."
+},
+{
+"title": "Create Hello World Function",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/create-hello-world-function",
+"description": "Write a function that returns 'Hello, World!'."
+},
+{
+"title": "Merge Strings Alternately",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/merge-strings-alternately",
+"description": "Merge two strings by alternating characters."
+},
+{
+"title": "Merge Sorted Array",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/merge-sorted-array",
+"description": "Merge two sorted arrays into one."
+},
+{
+"title": "Palindrome Number",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/palindrome-number",
+"description": "Check if a number is a palindrome."
+},
+{
+"title": "Ant on the Boundary",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/ant-on-the-boundary",
+"description": "Simulate an ant on a boundary grid."
+},
+{
+"title": "Type of Triangle",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/type-of-triangle",
+"description": "Identify the type of triangle given side lengths."
+},
+{
+"title": "Climbing Stairs",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/climbing-stairs",
+"description": "Calculate the number of ways to reach the top of stairs."
+},
+{
+"title": "Majority Element",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/majority-element",
+"description": "Find the majority element in an array."
+},
+{
+"title": "Logger Rate Limiter",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/logger-rate-limiter",
+"description": "Design a logger that limits message printing frequency."
+},
+{
+"title": "Find Customer Referee",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/find-customer-referee",
+"description": "Find the customer referred by others in a dataset."
+},
+{
+"title": "Min Cost Climbing Stairs",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/min-cost-climbing-stairs",
+"description": "Find the minimum cost to climb stairs with specific step costs."
+},
+{
+"title": "Kth Largest Element in a Stream",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/kth-largest-element-in-a-stream",
+"description": "Find the kth largest element in a stream of numbers."
+},
+{
+"title": "Middle of the Linked List",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/middle-of-the-linked-list",
+"description": "Return the middle node of a linked list."
+},
+{
+"title": "Longest Palindromic Substring",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-palindromic-substring",
+"description": "Find the longest substring in a given string that is a palindrome."
+},
+{
+"title": "String to Integer (atoi)",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/string-to-integer-atoi",
+"description": "Convert a string to a 32-bit signed integer following specific parsing rules."
+},
+{
+"title": "Integer to Roman",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/integer-to-roman",
+"description": "Convert an integer to its corresponding Roman numeral representation."
+},
+{
+"title": "Valid Sudoku",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/valid-sudoku",
+"description": "Check if a 9x9 Sudoku board is valid according to Sudoku rules."
+},
+{
+"title": "Combination Sum",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/combination-sum",
+"description": "Find all unique combinations in an array that sum up to a target value."
+},
+{
+"title": "Permutations",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/permutations",
+"description": "Generate all possible permutations of a list of numbers."
+},
+{
+"title": "Merge Intervals",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/merge-intervals",
+"description": "Merge all overlapping intervals in a list of intervals."
+},
+{
+"title": "Rotate List",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/rotate-list",
+"description": "Rotate a linked list to the right by k places."
+},
+{
+"title": "Minimum Path Sum",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/minimum-path-sum",
+"description": "Find the minimum sum path from top-left to bottom-right in a grid."
+},
+{
+"title": "Validate Binary Search Tree",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/validate-binary-search-tree",
+"description": "Verify if a binary tree is a valid binary search tree (BST)."
+},
+{
+"title": "Binary Tree Level Order Traversal",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/binary-tree-level-order-traversal",
+"description": "Return the level order traversal of a binary tree's nodes' values."
+},
+{
+"title": "LRU Cache",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/lru-cache",
+"description": "Design and implement a Least Recently Used (LRU) cache."
+},
+{
+"title": "Number of Islands",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/number-of-islands",
+"description": "Count the number of islands in a 2D grid representing land and water."
+},
+{
+"title": "Median of Two Sorted Arrays",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+"description": "Find the median of two sorted arrays combined into one sorted array."
+},
+{
+"title": "Merge K Sorted Lists",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/merge-k-sorted-lists",
+"description": "Merge k sorted linked lists into one sorted linked list."
+},
+{
+"title": "Word Ladder",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/word-ladder",
+"description": "Find the length of the shortest transformation sequence from a start word to an end word."
+},
+{
+"title": "Word Ladder II",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/word-ladder-ii",
+"description": "Find all shortest transformation sequences from a start word to an end word."
+},
+{
+"title": "Integer to English Words",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/integer-to-english-words",
+"description": "Convert a non-negative integer to its English words representation."
+},
+{
+"title": "Viewers Turned Streamers",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/viewers-turned-streamers",
+"description": "Hard problem on engaging stream viewers."
+}
+]
+}

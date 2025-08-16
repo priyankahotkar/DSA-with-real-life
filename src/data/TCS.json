@@ -1,0 +1,125 @@
+{
+"company": "TCS",
+"questions": [
+{
+"title": "Move Zeroes",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/move-zeroes",
+"description": "Move all zeros to the end of the array while maintaining relative order of non-zero elements."
+},
+{
+"title": "Two Sum",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/two-sum",
+"description": "Find indices of two numbers in an array that add up to a specific target."
+},
+{
+"title": "Roman to Integer",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/roman-to-integer",
+"description": "Convert a Roman numeral string to its integer value."
+},
+{
+"title": "Valid Parentheses",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/valid-parentheses",
+"description": "Determine if the input string has valid matching parentheses."
+},
+{
+"title": "Merge Sorted Array",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/merge-sorted-array",
+"description": "Merge two sorted arrays into one."
+},
+{
+"title": "Palindrome Number",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/palindrome-number",
+"description": "Check if a number is a palindrome."
+},
+{
+"title": "Climbing Stairs",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/climbing-stairs",
+"description": "Calculate the number of ways to reach the top of stairs."
+},
+{
+"title": "Majority Element",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/majority-element",
+"description": "Find the majority element in an array."
+},
+{
+"title": "Min Cost Climbing Stairs",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/min-cost-climbing-stairs",
+"description": "Find the minimum cost to climb stairs with specific step costs."
+},
+{
+"title": "Kth Largest Element in a Stream",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/kth-largest-element-in-a-stream",
+"description": "Find the kth largest element in a stream of numbers."
+},
+{
+"title": "Middle of the Linked List",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/middle-of-the-linked-list",
+"description": "Return the middle node of a linked list."
+},
+{
+"title": "Longest Palindromic Substring",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-palindromic-substring",
+"description": "Find the longest substring in a given string that is a palindrome."
+},
+{
+"title": "String to Integer (atoi)",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/string-to-integer-atoi",
+"description": "Convert a string to a 32-bit signed integer."
+},
+{
+"title": "Valid Sudoku",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/valid-sudoku",
+"description": "Check if a 9x9 Sudoku board is valid."
+},
+{
+"title": "Combination Sum",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/combination-sum",
+"description": "Find all unique combinations that sum to a target."
+},
+{
+"title": "Permutations",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/permutations",
+"description": "Generate all possible permutations of a list."
+},
+{
+"title": "Merge Intervals",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/merge-intervals",
+"description": "Merge all overlapping intervals in a list."
+},
+{
+"title": "Minimum Path Sum",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/minimum-path-sum",
+"description": "Find the minimum sum path from top-left to bottom-right in a grid."
+},
+{
+"title": "Word Search",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/word-search",
+"description": "Determine if a given word exists in a grid of letters."
+},
+{
+"title": "Validate Binary Search Tree",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/validate-binary-search-tree",
+"description": "Determine if a binary tree is a valid binary search tree."
+}
+]
+}

@@ -3130,3 +3130,148 @@ body {
     justify-content: center;
   }
 }
+
+/* ... existing styles ... */
+
+/* Company Specific Questions Page */
+.company-questions-page, .company-details-page {
+  padding-top: 100px;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.company-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  background: rgba(139, 92, 246, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  background: rgba(139, 92, 246, 0.1);
+  border-color: #8B5CF6;
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.2);
+}
+
+.company-card-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+/* Company Details Page */
+.difficulty-section {
+  margin-bottom: 2rem;
+}
+
+.difficulty-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border-left: 4px solid var(--difficulty-color);
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.difficulty-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.open {
+  transform: rotate(180deg);
+}
+
+.questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-3px);
+  border-color: #8B5CF6;
+  background: rgba(139, 92, 246, 0.05);
+}
+
+.question-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.question-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-right: 0.5rem;
+}
+
+.external-link-icon {
+  color: #94a3b8;
+  flex-shrink: 0;
+  transition: color 0.3s;
+}
+
+.question-card:hover .external-link-icon {
+  color: #8B5CF6;
+}
+
+.question-description {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* Loading and Error States */
+.loading-state, .error-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

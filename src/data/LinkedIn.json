@@ -1,0 +1,125 @@
+{
+"company": "LinkedIn",
+"questions": [
+{
+"title": "Reverse Linked List",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/reverse-linked-list",
+"description": "Reverse a singly linked list."
+},
+{
+"title": "Merge Two Sorted Lists",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/merge-two-sorted-lists",
+"description": "Merge two sorted linked lists into one sorted list."
+},
+{
+"title": "Middle of the Linked List",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/middle-of-the-linked-list",
+"description": "Return the middle node of a linked list."
+},
+{
+"title": "Linked List Cycle",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/linked-list-cycle",
+"description": "Determine if a linked list has a cycle."
+},
+{
+"title": "Remove Nth Node From End of List",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list",
+"description": "Remove the nth node from the end of a linked list."
+},
+{
+"title": "Add Two Numbers",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/add-two-numbers",
+"description": "Add two numbers represented by linked lists."
+},
+{
+"title": "Intersection of Two Linked Lists",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/intersection-of-two-linked-lists",
+"description": "Find the intersection node of two linked lists."
+},
+{
+"title": "Swap Nodes in Pairs",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/swap-nodes-in-pairs",
+"description": "Swap every two adjacent nodes in a linked list."
+},
+{
+"title": "Sort List",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/sort-list",
+"description": "Sort a linked list using constant space complexity."
+},
+{
+"title": "Reverse Linked List II",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/reverse-linked-list-ii",
+"description": "Reverse a linked list from position m to n."
+},
+{
+"title": "Copy List with Random Pointer",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/copy-list-with-random-pointer",
+"description": "Copy a linked list with random pointers."
+},
+{
+"title": "Merge k Sorted Lists",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/merge-k-sorted-lists",
+"description": "Merge k sorted linked lists into one sorted list."
+},
+{
+"title": "Reverse Nodes in k-Group",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/reverse-nodes-in-k-group",
+"description": "Reverse nodes in groups of k in a linked list."
+},
+{
+"title": "Two Sum",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/two-sum",
+"description": "Find indices of two numbers in an array that add up to a specific target."
+},
+{
+"title": "Longest Palindromic Substring",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-palindromic-substring",
+"description": "Find the longest substring in a given string that is a palindrome."
+},
+{
+"title": "Validate Binary Search Tree",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/validate-binary-search-tree",
+"description": "Determine if a binary tree is a valid binary search tree."
+},
+{
+"title": "LRU Cache",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/lru-cache",
+"description": "Design and implement a Least Recently Used (LRU) cache."
+},
+{
+"title": "Number of Islands",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/number-of-islands",
+"description": "Count the number of islands in a 2D grid."
+},
+{
+"title": "Median of Two Sorted Arrays",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+"description": "Find the median of two sorted arrays combined."
+},
+{
+"title": "Word Ladder",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/word-ladder",
+"description": "Find the shortest transformation sequence from start to end word."
+}
+]
+}

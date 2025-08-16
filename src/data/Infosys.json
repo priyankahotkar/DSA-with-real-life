@@ -1,0 +1,125 @@
+{
+"company": "Infosys",
+"questions": [
+{
+"title": "Swap Two Numbers",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/swap-two-numbers",
+"description": "Swap two numbers without using a temporary variable."
+},
+{
+"title": "Next Greater Element",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/next-greater-element-i",
+"description": "Find the next greater element for each element in an array."
+},
+{
+"title": "Build Heap",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/build-heap",
+"description": "Build a heap from an array."
+},
+{
+"title": "Rotting Oranges",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/rotting-oranges",
+"description": "Find the minimum time for all oranges to rot in a grid."
+},
+{
+"title": "Longest Common Subsequence",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-common-subsequence",
+"description": "Find the length of the longest common subsequence between two strings."
+},
+{
+"title": "Detect Cycle in Directed Graph",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/course-schedule",
+"description": "Detect if there is a cycle in a directed graph (course prerequisites)."
+},
+{
+"title": "Lexicographically Smallest String",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/lexicographically-smallest-equivalent-string",
+"description": "Find the lexicographically smallest equivalent string."
+},
+{
+"title": "Linked List Cycle",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/linked-list-cycle",
+"description": "Determine if a linked list has a cycle."
+},
+{
+"title": "Two Sum",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/two-sum",
+"description": "Find indices of two numbers in an array that add up to a specific target."
+},
+{
+"title": "Merge Two Sorted Lists",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/merge-two-sorted-lists",
+"description": "Merge two sorted linked lists into one sorted list."
+},
+{
+"title": "Valid Parentheses",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/valid-parentheses",
+"description": "Determine if the input string has valid matching parentheses."
+},
+{
+"title": "Binary Search",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/binary-search",
+"description": "Implement binary search to find a target in a sorted array."
+},
+{
+"title": "Climbing Stairs",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/climbing-stairs",
+"description": "Calculate the number of ways to reach the top of stairs."
+},
+{
+"title": "Longest Palindromic Substring",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-palindromic-substring",
+"description": "Find the longest substring in a given string that is a palindrome."
+},
+{
+"title": "Merge Intervals",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/merge-intervals",
+"description": "Merge all overlapping intervals in a list."
+},
+{
+"title": "Unique Paths",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/unique-paths",
+"description": "Find the number of unique paths from top-left to bottom-right in a grid."
+},
+{
+"title": "Coin Change",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/coin-change",
+"description": "Find the fewest number of coins needed to make up a given amount."
+},
+{
+"title": "Word Break",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/word-break",
+"description": "Determine if a string can be segmented into words from a dictionary."
+},
+{
+"title": "Trapping Rain Water",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/trapping-rain-water",
+"description": "Compute how much water can be trapped between bars of different heights."
+},
+{
+"title": "Median of Two Sorted Arrays",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+"description": "Find the median of two sorted arrays combined."
+}
+]
+}

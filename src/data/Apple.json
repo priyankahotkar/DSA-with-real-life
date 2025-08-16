@@ -1,0 +1,125 @@
+{
+"company": "Apple",
+"questions": [
+{
+"title": "LRU Cache",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/lru-cache",
+"description": "Design and implement a Least Recently Used (LRU) cache."
+},
+{
+"title": "Two Sum",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/two-sum",
+"description": "Find indices of two numbers in an array that add up to a specific target."
+},
+{
+"title": "Valid Parentheses",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/valid-parentheses",
+"description": "Determine if the input string has valid matching parentheses."
+},
+{
+"title": "Merge Two Sorted Lists",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/merge-two-sorted-lists",
+"description": "Merge two sorted linked lists into one sorted list."
+},
+{
+"title": "Best Time to Buy and Sell Stock",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+"description": "Find the maximum profit from buying and selling a stock once."
+},
+{
+"title": "Longest Palindromic Substring",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-palindromic-substring",
+"description": "Find the longest substring in a given string that is a palindrome."
+},
+{
+"title": "String to Integer (atoi)",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/string-to-integer-atoi",
+"description": "Convert a string to a 32-bit signed integer."
+},
+{
+"title": "Integer to Roman",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/integer-to-roman",
+"description": "Convert an integer to its Roman numeral representation."
+},
+{
+"title": "Valid Sudoku",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/valid-sudoku",
+"description": "Check if a 9x9 Sudoku board is valid."
+},
+{
+"title": "Combination Sum",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/combination-sum",
+"description": "Find all unique combinations that sum to a target."
+},
+{
+"title": "Permutations",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/permutations",
+"description": "Generate all possible permutations of a list."
+},
+{
+"title": "Merge Intervals",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/merge-intervals",
+"description": "Merge all overlapping intervals in a list."
+},
+{
+"title": "Rotten Oranges",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/rotting-oranges",
+"description": "Find the minimum time for all oranges to rot in a grid."
+},
+{
+"title": "Longest Common Subsequence",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-common-subsequence",
+"description": "Find the length of the longest common subsequence between two strings."
+},
+{
+"title": "Validate Binary Search Tree",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/validate-binary-search-tree",
+"description": "Determine if a binary tree is a valid binary search tree."
+},
+{
+"title": "Binary Tree Level Order Traversal",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/binary-tree-level-order-traversal",
+"description": "Return the level order traversal of a binary tree's nodes' values."
+},
+{
+"title": "Number of Islands",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/number-of-islands",
+"description": "Count the number of islands in a 2D grid."
+},
+{
+"title": "Median of Two Sorted Arrays",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+"description": "Find the median of two sorted arrays combined."
+},
+{
+"title": "Merge k Sorted Lists",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/merge-k-sorted-lists",
+"description": "Merge k sorted linked lists into one sorted list."
+},
+{
+"title": "Word Ladder",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/word-ladder",
+"description": "Find the shortest transformation sequence from start to end word."
+}
+]
+}

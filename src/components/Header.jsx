@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code, Home, BookOpen, User, Users, Star } from 'lucide-react';
+import { Code, Home, BookOpen, User, Users, Star, Building } from 'lucide-react';
 import SearchBar from './SearchBar';
 
 const Header = () => {
@@ -48,6 +48,13 @@ const Header = () => {
             >
               <Star size={18} />
               Features
+            </Link>
+            <Link 
+              to="/companies" 
+              className={`nav-link ${location.pathname.startsWith('/company') ? 'active' : ''}`}
+            >
+              <Building size={18} />
+              Companies
             </Link>
             <Link 
               to="/community" 

@@ -1,0 +1,173 @@
+{
+"company": "Amazon",
+"questions": [
+{
+"title": "Two Sum",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/two-sum",
+"description": "Find indices of two numbers in an array that add up to a specific target."
+},
+{
+"title": "Roman to Integer",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/roman-to-integer",
+"description": "Convert a Roman numeral string to its integer value."
+},
+{
+"title": "Valid Parentheses",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/valid-parentheses",
+"description": "Determine if the input string has valid matching parentheses."
+},
+{
+"title": "Same Tree",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/same-tree",
+"description": "Check if two binary trees are identical in structure and node values."
+},
+{
+"title": "Symmetric Tree",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/symmetric-tree",
+"description": "Determine if a binary tree is symmetric around its center."
+},
+{
+"title": "Best Time to Buy and Sell Stock",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock",
+"description": "Find the maximum profit from buying and selling a stock once."
+},
+{
+"title": "Diameter of Binary Tree",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/diameter-of-binary-tree",
+"description": "Find the diameter (longest path) of a binary tree."
+},
+{
+"title": "Longest Palindromic Substring",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-palindromic-substring",
+"description": "Find the longest substring in a given string that is a palindrome."
+},
+{
+"title": "String to Integer (atoi)",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/string-to-integer-atoi",
+"description": "Convert a string to a 32-bit signed integer following specific parsing rules."
+},
+{
+"title": "Integer to Roman",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/integer-to-roman",
+"description": "Convert an integer to its corresponding Roman numeral representation."
+},
+{
+"title": "Valid Sudoku",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/valid-sudoku",
+"description": "Check if a 9x9 Sudoku board is valid according to Sudoku rules."
+},
+{
+"title": "Combination Sum",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/combination-sum",
+"description": "Find all unique combinations in an array that sum up to a target value."
+},
+{
+"title": "Permutations",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/permutations",
+"description": "Generate all possible permutations of a list of numbers."
+},
+{
+"title": "Merge Intervals",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/merge-intervals",
+"description": "Merge all overlapping intervals in a list of intervals."
+},
+{
+"title": "Rotate List",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/rotate-list",
+"description": "Rotate a linked list to the right by k places."
+},
+{
+"title": "Minimum Path Sum",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/minimum-path-sum",
+"description": "Find the minimum sum path from top-left to bottom-right in a grid."
+},
+{
+"title": "Word Search",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/word-search",
+"description": "Determine if a given word exists in a grid of letters by traversing adjacent cells."
+},
+{
+"title": "Validate Binary Search Tree",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/validate-binary-search-tree",
+"description": "Verify if a binary tree is a valid binary search tree (BST)."
+},
+{
+"title": "Binary Tree Level Order Traversal",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/binary-tree-level-order-traversal",
+"description": "Return the level order traversal of a binary tree's nodes' values."
+},
+{
+"title": "Convert Sorted List to Binary Search Tree",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree",
+"description": "Convert a sorted singly linked list to a height-balanced BST."
+},
+{
+"title": "Populating Next Right Pointers in Each Node",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node",
+"description": "Populate each next pointer to point to its next right node in a perfect binary tree."
+},
+{
+"title": "LRU Cache",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/lru-cache",
+"description": "Design and implement a Least Recently Used (LRU) cache."
+},
+{
+"title": "Min Stack",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/min-stack",
+"description": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time."
+},
+{
+"title": "Number of Islands",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/number-of-islands",
+"description": "Count the number of islands in a 2D grid representing land and water."
+},
+{
+"title": "Course Schedule",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/course-schedule",
+"description": "Determine if all courses can be finished given their prerequisites."
+},
+{
+"title": "Course Schedule II",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/course-schedule-ii",
+"description": "Return the order in which courses should be taken to finish all courses."
+},
+{
+"title": "Add and Search Word - Data structure design",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/add-and-search-word-data-structure-design",
+"description": "Design a data structure to add words and search for them with support for wildcard characters."
+},
+{
+"title": "Game of Life",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/game-of-life",
+"description": "Simulate the Game of Life rules on a given board."
+}
+]
+}

@@ -1,0 +1,125 @@
+{
+"company": "Wipro",
+"questions": [
+{
+"title": "Backspace String Compare",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/backspace-string-compare",
+"description": "Compare two strings after processing backspaces."
+},
+{
+"title": "Two Sum",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/two-sum",
+"description": "Find indices of two numbers in an array that add up to a specific target."
+},
+{
+"title": "Valid Palindrome",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/valid-palindrome",
+"description": "Check if a string is a palindrome ignoring non-alphanumeric characters."
+},
+{
+"title": "Reverse String",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/reverse-string",
+"description": "Reverse the characters in a string."
+},
+{
+"title": "Merge Sorted Array",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/merge-sorted-array",
+"description": "Merge two sorted arrays into one."
+},
+{
+"title": "Binary Search",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/binary-search",
+"description": "Implement binary search to find a target in a sorted array."
+},
+{
+"title": "Climbing Stairs",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/climbing-stairs",
+"description": "Calculate the number of ways to reach the top of stairs."
+},
+{
+"title": "Longest Palindromic Substring",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-palindromic-substring",
+"description": "Find the longest substring in a given string that is a palindrome."
+},
+{
+"title": "Merge Intervals",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/merge-intervals",
+"description": "Merge all overlapping intervals in a list."
+},
+{
+"title": "Unique Paths",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/unique-paths",
+"description": "Find the number of unique paths from top-left to bottom-right in a grid."
+},
+{
+"title": "Longest Increasing Subsequence",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-increasing-subsequence",
+"description": "Find the length of the longest increasing subsequence in an array."
+},
+{
+"title": "Reverse Linked List",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/reverse-linked-list",
+"description": "Reverse a singly linked list."
+},
+{
+"title": "Linked List Cycle",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/linked-list-cycle",
+"description": "Determine if a linked list has a cycle."
+},
+{
+"title": "Merge Two Sorted Lists",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/merge-two-sorted-lists",
+"description": "Merge two sorted linked lists into one sorted list."
+},
+{
+"title": "Remove Nth Node From End of List",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list",
+"description": "Remove the nth node from the end of a linked list."
+},
+{
+"title": "Add Two Numbers",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/add-two-numbers",
+"description": "Add two numbers represented by linked lists."
+},
+{
+"title": "Coin Change",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/coin-change",
+"description": "Find the fewest number of coins needed to make up a given amount."
+},
+{
+"title": "Word Break",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/word-break",
+"description": "Determine if a string can be segmented into words from a dictionary."
+},
+{
+"title": "Trapping Rain Water",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/trapping-rain-water",
+"description": "Compute how much water can be trapped between bars of different heights."
+},
+{
+"title": "Median of Two Sorted Arrays",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+"description": "Find the median of two sorted arrays combined."
+}
+]
+}

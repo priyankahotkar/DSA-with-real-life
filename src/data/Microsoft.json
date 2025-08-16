@@ -1,0 +1,125 @@
+{
+"company": "Microsoft",
+"questions": [
+{
+"title": "Two Sum",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/two-sum",
+"description": "Find indices of two numbers in an array that add up to a specific target."
+},
+{
+"title": "Median of Two Sorted Arrays",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/median-of-two-sorted-arrays",
+"description": "Find the median of two sorted arrays combined into one sorted array."
+},
+{
+"title": "Rotate Image",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/rotate-image",
+"description": "Rotate a square matrix 90 degrees clockwise in place."
+},
+{
+"title": "Subarray Sum Equals K",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/subarray-sum-equals-k",
+"description": "Find the number of contiguous subarrays that sum up to a given integer K."
+},
+{
+"title": "Validate Binary Search Tree",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/validate-binary-search-tree",
+"description": "Determine if a binary tree is a valid binary search tree."
+},
+{
+"title": "Binary Tree Vertical Order Traversal",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/binary-tree-vertical-order-traversal",
+"description": "Return the vertical order traversal of a binary tree's nodes' values."
+},
+{
+"title": "0/1 Knapsack",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/ones-and-zeroes",
+"description": "Maximize the number of strings formed using limited 0s and 1s (knapsack variant)."
+},
+{
+"title": "Longest Palindromic Substring",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-palindromic-substring",
+"description": "Find the longest substring in a given string that is a palindrome."
+},
+{
+"title": "Binary Search",
+"difficulty": "Easy",
+"link": "https://leetcode.com/problems/binary-search",
+"description": "Implement binary search to find a target in a sorted array."
+},
+{
+"title": "Longest Increasing Subsequence",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/longest-increasing-subsequence",
+"description": "Find the length of the longest increasing subsequence in an array."
+},
+{
+"title": "Coin Change",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/coin-change",
+"description": "Find the fewest number of coins needed to make up a given amount."
+},
+{
+"title": "Word Break",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/word-break",
+"description": "Determine if a string can be segmented into words from a dictionary."
+},
+{
+"title": "LRU Cache",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/lru-cache",
+"description": "Design and implement a Least Recently Used (LRU) cache."
+},
+{
+"title": "Number of Islands",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/number-of-islands",
+"description": "Count the number of islands in a 2D grid."
+},
+{
+"title": "Course Schedule",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/course-schedule",
+"description": "Determine if all courses can be finished given prerequisites."
+},
+{
+"title": "Merge Intervals",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/merge-intervals",
+"description": "Merge all overlapping intervals in a list."
+},
+{
+"title": "K Closest Points to Origin",
+"difficulty": "Medium",
+"link": "https://leetcode.com/problems/k-closest-points-to-origin",
+"description": "Find the K closest points to the origin in a 2D plane."
+},
+{
+"title": "Trapping Rain Water",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/trapping-rain-water",
+"description": "Compute how much water can be trapped between bars of different heights."
+},
+{
+"title": "Sliding Window Maximum",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/sliding-window-maximum",
+"description": "Find the maximum in each sliding window of size K."
+},
+{
+"title": "Edit Distance",
+"difficulty": "Hard",
+"link": "https://leetcode.com/problems/edit-distance",
+"description": "Find the minimum operations to convert one word to another."
+}
+]
+}
