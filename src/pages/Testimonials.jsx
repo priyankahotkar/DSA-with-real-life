@@ -5,7 +5,7 @@ const StatsAndTestimonials = () => {
   const stats = [
     { label: "Visitors", value: "70+" },
     { label: "Page Views", value: "300+" },
-    { label: "Bounce Rate", value: "28%" },
+    { label: "Bounce Rate", value: "25%" },
     { label: "Mobile Users", value: "60%" },
     { label: "Desktop Users", value: "40%" },
     { label: "India Visitors", value: "98%" },
