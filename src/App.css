@@ -44,7 +44,215 @@ body {
   background: rgba(15, 15, 35, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(139, 92, 246, 0.2);
-  padding: 1rem 0;
+  padding: 0.75rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  z-index: 1002;
+}
+
+.logo-icon {
+  color: #8B5CF6;
+}
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1002;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.hamburger-menu:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #8B5CF6;
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.mobile-menu-header,
+.mobile-menu-footer,
+.close-menu {
+  display: none;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 85%;
+    max-width: 400px;
+    background: #0f0f23;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-top: 5rem;
+    gap: 0.75rem;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1002;
+    border-left: 1px solid rgba(139, 92, 246, 0.2);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+  }
+
+  .nav-links.mobile-open {
+    right: 0;
+    transform: translateX(0);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #8B5CF6;
+    background: rgba(139, 92, 246, 0.1);
+  }
+
+  .mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0f0f23;
+    z-index: 1;
+    padding: 1rem 1.5rem;
+  }
+
+  .close-menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+  }
+
+  .close-menu:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .mobile-menu-footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    color: #64748b;
+    font-size: 0.875rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    bottom: 0;
+    background: #0f0f23;
+  }
+}
+
+/* Ensure content doesn't shift when mobile menu is open */
+body.mobile-menu-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Overlay styles are now handled by .mobile-menu-overlay */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Search Bar Styles */
@@ -445,7 +653,7 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  column-gap: 1rem;
 }
 
 .nav-link {
@@ -456,7 +664,7 @@ body {
   color: #94a3b8;
   font-weight: 500;
   transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
   border-radius: 8px;
 }
 
@@ -2169,8 +2377,113 @@ body {
   color: #94a3b8;
 }
 
+/* Tree Visualization */
+.tree-visual {
+  position: relative;
+  padding: 1.5rem 0;
+  overflow: auto;
+  max-width: 100%;
+}
+
+.tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: fit-content;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+.tree-level {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+  position: relative;
+  min-width: 100%;
+}
+
+.tree-node {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.1));
+  border: 2px solid #8B5CF6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e2e8f0;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tree-node.root {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1));
+  border-color: #10B981;
+  width: 50px;
+  height: 50px;
+  font-size: 1.1em;
+}
+
+/* Add connecting lines between nodes */
+.tree-node::before,
+.tree-node::after {
+  content: '';
+  position: absolute;
+  background: rgba(139, 92, 246, 0.6);
+  z-index: 1;
+}
+
+/* Vertical line from parent to children */
+/* .tree-node::before {
+  width: 2px;
+  height: 1.5rem;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none; /* Initially hidden */
+/* } */ */
+
+/* Horizontal line between siblings */
+.tree-node:not(:last-child)::after {
+  width: 2rem;
+  height: 2px;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Show vertical lines for all nodes except root */
+.tree-level:not(:first-child) .tree-node::before {
+  display: block;
+}
+
+/* Hide horizontal line for last node in level */
+.tree-node:last-child::after {
+  display: none;
+}
+
+/* Traversal info */
+.traversal-info {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .traversal-info div {
   margin: 0.5rem 0;
+  color: #e2e8f0;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85rem;
 }
 
 /* Step Explanation */
@@ -2851,7 +3164,7 @@ body {
 @media (min-width: 1400px) {
   .footer-content {
     gap: 4rem;
-    padding: 4rem 0 3rem;
+    padding: 4rem 0 0;
   }
   
   .footer-brand {
