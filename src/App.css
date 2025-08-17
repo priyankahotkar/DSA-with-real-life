@@ -663,7 +663,6 @@ body.mobile-menu-open {
 .nav-link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   text-decoration: none;
   color: #94a3b8;
   font-weight: 500;
