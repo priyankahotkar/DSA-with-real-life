@@ -12,6 +12,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from 'react';
 import CompanySpecificQuestions from './pages/CompanySpecificQuestions';
 import CompanySpecificQuestionsDetails from './pages/CompanySpecificQuestionsDetails';
+import Testimonials from './pages/Testimonials';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
   // when i change the url, i want to scroll to the top smoothly
@@ -48,6 +49,7 @@ function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
             <Route path="/features" element={<Features />} />
             <Route path="/community" element={<Community />} />
+            <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/companies" element={<CompanySpecificQuestions />} />
             <Route path="/company/:companyName" element={<CompanySpecificQuestionsDetails />} />
           </Routes>

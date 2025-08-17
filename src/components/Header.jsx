@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Code, Home, BookOpen, User, Users, Star, Building, Menu, X } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import SearchBar from './SearchBar';
+import { MessageSquare } from 'lucide-react';
 
 const Header = () => {
   const location = useLocation();
@@ -132,7 +133,7 @@ const Header = () => {
             </Link>
             <Link 
               to="/companies" 
-              className={`nav-link ${location.pathname.startsWith('/company') ? 'active' : ''}`}
+              className={`nav-link ${location.pathname.startsWith('/companies') ? 'active' : ''}`}
             >
               <Building size={18} />
               Company Specific Questions
@@ -143,6 +144,13 @@ const Header = () => {
             >
               <Users size={18} />
               Community
+            </Link>
+            <Link 
+              to="/testimonials" 
+              className={`nav-link ${location.pathname === '/testimonials' ? 'active' : ''}`}
+            >
+              <MessageSquare size={18} />
+              Testimonials
             </Link>
             <AnimatePresence mode="wait">
               <SearchBar />
